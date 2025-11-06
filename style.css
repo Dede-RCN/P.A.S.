@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  color: #594C25;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #594C25;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, .botao, .logo {
+  font-family: 'Poppins', sans-serif;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.titulo-centralizado {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitulo-centralizado {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.texto-destaque {
+  color: #A67C49;
+}
+
+.texto-vermelho {
+  color: #8E3428;
+}
+
+.texto-amarelo {
+  color: #F5C339;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.botao-amarelo {
+  background: #F5C339;
+  color: #594C25;
+}
+
+.botao-contorno {
+  border-color: #594C25;
+  color: #594C25;
+  background: transparent;
+}
+
+.marcador-circulo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.decoracao-esquerda,
+.decoracao-direita {
+  position: absolute;
+  z-index: 0;
+}
+
+.cabecalho {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.conteiner-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.apresentacao {
+  position: relative;
+  min-height: 80vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fundo-apresentacao {
+  position: absolute;
+  margin-top: 100px;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 80%;
+  background: #F5C339;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.conteiner-apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteudo-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.conteudo-texto h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.conteudo-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.imagem-apresentacao {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.secao {
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.grade-cartoes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.cartao {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #00000010;
+  flex: 1;
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icone {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icone-bege {
+  background: #D9BB84;
+}
+
+.icone-amarelo {
+  background: #F5C339;
+}
+
+.grade-roteiro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.item-roteiro {
+  background: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px #00000010;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.conteiner-boletim {
+  max-width: 600px;
+  text-align: center;
+}
+
+.formulario-boletim {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.formulario-boletim input {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+.rodape {
+  background: #A68A5E;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+}
+
+.lista-em-linha {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

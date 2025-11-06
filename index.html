@@ -1,13 +1,109 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css">
+  <title>P.A.S.</title>
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <div class="conteiner conteiner-cabecalho">
+      <div class="logo">P.A.S.</div>
+      <nav class="menu-navegacao">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ferramentas">Calculadora</a></li>
+          <li><a href="#ferramentas">Artigos</a></li>
+        </ul>
+      </nav>
+      <a href="#junte-se" class="botao botao-amarelo">Junte-se</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="apresentacao">
+      <div class="fundo-apresentacao"></div>
+      <div class="conteiner conteiner-apresentacao">
+        <div class="conteudo-texto">
+          <h1>Desperdício Zero, <br> Sabor <span class="texto-destaque">Infinito.</span></h1>
+          <p>O P.A.S. é o seu guia para uma alimentação consciente. Transforme sobras em oportunidades e reduza seu
+            impacto.</p>
+          <a href="#ferramentas" class="botao botao-amarelo">Conheça as Ferramentas</a>
+        </div>
+        <div class="imagem-apresentacao">
+          <div class="marcador-circulo" style="background: #F5C339;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ferramentas" class="secao">
+      <div class="marcador-circulo decoracao-esquerda" style="background: #9acd32; left: -100px;"></div>
+
+      <div class="conteiner">
+        <h2 class="titulo-centralizado">Nossas Ferramentas Essenciais</h2>
+        <div class="grade-cartoes">
+          <div class="cartao">
+            <div class="icone icone-bege">
+              <img src="/img/livro.png" alt="Ícone Calculadora">
+            </div>
+            <h3>Biblioteca Educativa</h3>
+            <p>Explore artigos, guias em vídeo e infográficos sobre nutrição inteligente.</p>
+            <a href="#artigos" class="botao botao-contorno">Ver Conteúdo</a>
+          </div>
+          <div class="cartao">
+            <div class="icone icone-amarelo">
+              <img src="/img/calculadora.png" alt="Ícone Calculadora">
+            </div>
+            <h3>Calculadora de Impacto</h3>
+            <p>Descubra quanto alimento você desperdiça e veja o impacto real.</p>
+            <a href="#calculadora" class="botao botao-amarelo">Calcular Agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="secao secao-roteiro">
+      <div class="marcador-circulo decoracao-direita" style="background: #ff6347; right: -100px; bottom: 0px;"></div>
+
+      <div class="conteiner">
+        <h2 class="titulo-centralizado">O Futuro <span class="texto-vermelho">Consciente</span></h2>
+        <p class="subtitulo-centralizado">Estamos construindo um ecossistema completo. Em breve:</p>
+        <div class="grade-roteiro">
+          <div class="item-roteiro"><span>📅</span> Planner Digital</div>
+          <div class="item-roteiro"><span>📍</span> Mapa de Doações</div>
+          <div class="item-roteiro"><span>🏅</span> Desafios Gamificados</div>
+          <div class="item-roteiro"><span>💬</span> Chatbot IA</div>
+          <div class="item-roteiro"><span>➕</span> E muito mais!</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="junte-se" class="secao secao-boletim">
+      <div class="conteiner conteiner-boletim">
+        <h2 class="titulo-centralizado">Junte-se ao <span class="texto-amarelo">Movimento</span></h2>
+        <p class="subtitulo-centralizado">Receba dicas semanais e seja o primeiro a saber das novidades.</p>
+        <form class="formulario-boletim">
+          <input type="email" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="botao botao-amarelo">Inscrever-se</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="conteiner">
+      <ul class="lista-em-linha">
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>
