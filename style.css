@@ -113,6 +113,7 @@ h1, h2, h3, .botao, .logo {
   top: 0;
   padding: 1rem 0;
   z-index: 10;
+  
 }
 
 .conteiner-cabecalho {
@@ -255,17 +256,30 @@ h1, h2, h3, .botao, .logo {
 
 .formulario-boletim {
   display: flex;
+  align-items: flex-start; /* alinha pelo topo */
   gap: 1rem;
-  justify-content: center;
   margin-top: 2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column; /* input em cima e span embaixo */
+  flex: 1; /* mantém tamanho do input */
 }
 
 .formulario-boletim input {
   padding: 0.8rem;
   border-radius: 4px;
   border: 1px solid #ccc;
-  flex: 1;
   font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+.span-required {
+  font-size: 12px;
+  margin-top: 3px;
+  color: red;
+  display: none;
 }
 
 .rodape {

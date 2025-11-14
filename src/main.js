@@ -1,7 +1,9 @@
+/*
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -23,3 +25,50 @@ document.querySelector('#app').innerHTML = `
 
 setupCounter(document.querySelector('#counter'))
 setupCounter(document.querySelector('#counter'))
+
+*/
+
+
+const form       = document.getElementById('form');
+const campos     = document.querySelectorAll('.required');
+const spans      = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+
+function setError(index){
+  campos[index].style.border = '5px solid #e63636';
+  spans[index].style.display = 'block';
+}
+
+function removeError(index){
+  campos[index].style.border = '';
+  spans[index].style.display = 'none';
+}
+
+function emailValido(){
+  const email = campos[0].value.trim();
+
+  if (email === "") {
+    removeError(0);
+    return;
+  }
+
+  if(!emailRegex.test(campos[0].value))
+  {setError(0);}
+  else{removeError(0);}
+}
+//------------------------------------------------------------------------
+const forms = document.querySelector('form');
+
+forms.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  emailjs.init("sUtuqL_B0tgWO3q0W");
+  
+  emailjs.sendForm('service_tkzrspf', 'template_kzlvc73', forms)
+    .then(() => {
+      alert('Inscrição realizada com sucesso!');
+      forms.reset();
+    }, (error) => {
+      alert('Ocorreu um erro ao enviar o formulário: ' + JSON.stringify(error));
+    }); 
+});
