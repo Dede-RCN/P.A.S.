@@ -86,6 +86,13 @@ h1, h2, h3, .botao, .logo {
 .botao-amarelo {
   background: #F5C339;
   color: #594C25;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s; 
 }
 
 .botao-contorno {
@@ -254,6 +261,7 @@ h1, h2, h3, .botao, .logo {
   text-align: center;
 }
 
+
 .formulario-boletim {
   display: flex;
   align-items: flex-start; /* alinha pelo topo */
@@ -293,4 +301,32 @@ h1, h2, h3, .botao, .logo {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  .botao-amarelo{
+    display: none;
+  }
+
+  .cartao {
+    max-height: auto;
+  }
+
+  .fundo-apresentacao{
+    display: none;
+  }
+
+  .conteiner-apresentacao {
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.marcador-circulo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
 }
